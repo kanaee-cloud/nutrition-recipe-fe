@@ -5,7 +5,7 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: #ffff;
   --foreground: oklch(0.145 0 0);
   --font-sans: var(--font-lexend);
   --card: oklch(1 0 0);
@@ -114,6 +114,16 @@
 body {
   font-family: var(--font-lexend), sans-serif;
 }
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 
 @layer base {
   * {

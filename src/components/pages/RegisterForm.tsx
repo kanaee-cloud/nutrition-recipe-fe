@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 
-// Schema Validasi
+
 const formSchema = z.object({
   email: z.string().email({ message: "Email tidak valid" }),
   username: z.string().min(3, { message: "Username minimal 3 karakter" }),
