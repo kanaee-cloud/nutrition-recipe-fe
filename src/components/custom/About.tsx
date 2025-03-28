@@ -11,19 +11,19 @@ export default function About() {
     <Accordion type="single" collapsible>
       <AccordionItem value="item-1" className="w-full">
         <AccordionTrigger>Is it accessible for children or adult, and what should we do?</AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="opacity-60">
           Yes. It adheres to the WAI-ARIA design pattern.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2" className="w-full">
         <AccordionTrigger>What we can do for you?</AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="opacity-60">
           Yes. It adheres to the WAI-ARIA design pattern.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3" className="w-full">
         <AccordionTrigger>Can we help you?</AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="opacity-60">
           Yes. It adheres to the WAI-ARIA design pattern.
         </AccordionContent>
       </AccordionItem>

@@ -29,20 +29,19 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="relative flex items-center justify-center h-screen bg-black/90 text-white px-6 py-16">
-        <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12">
-        
-          <div className="text-left">
-            <h1 className="text-3xl md:text-4xl font-semibold mb-4">About Us</h1>
+      <section className="flex items-center justify-center h-screen bg-black/90 text-white px-6 py-16">
+        <div className="mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12 w-full max-w-6xl">
+          <div className="text-center md:text-left flex-1">
+            <h1 className="text-3xl md:text-4xl font-semibold mb-4">
+              About Us
+            </h1>
             <p className="text-sm md:text-base opacity-80 mb-6">
               Learn more about how we can help you in the kitchen.
             </p>
             <About />
           </div>
 
-      
-          <div className="w-full">
+          <div className="flex-1 flex justify-center">
             <CarouselPlugin />
           </div>
         </div>
