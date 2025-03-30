@@ -6,15 +6,15 @@ import { FaUpRightFromSquare } from "react-icons/fa6";
 export default function LandingPage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative flex items-center justify-center h-screen bg-gradient-to-b from-[#0d2058] to-[#09090b]">
+ 
+      <section className="relative flex items-center justify-center h-screen bg-gradient-to-b from-[#051853] to-[#09090b]">
         <div className="mx-auto flex flex-col justify-center text-white font-semibold p-6 max-w-lg text-center">
           <h1 className="text-3xl md:text-5xl mb-4">The Recipe</h1>
           <p className="text-base md:text-lg opacity-80">
             Your Assistant Partner in the Kitchen.
           </p>
 
-          {/* Buttons */}
+      
           <div className="flex items-center justify-center gap-x-4 mt-6">
             <Button className="glassmorphism px-6 py-2 rounded-lg text-white transition-all duration-300 transform hover:scale-105">
               Get Started
