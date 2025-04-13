@@ -3,7 +3,11 @@ import { CarouselPlugin } from "../custom/CarouselPlugin";
 import Feature from "../custom/Feature";
 import { Button } from "../ui/button";
 import { FaUpRightFromSquare } from "react-icons/fa6";
-import { BetweenHorizontalStart, Info  } from 'lucide-react';
+import { BetweenHorizontalStart, Info } from "lucide-react";
+import Footer from "@/components/custom/Footer";
+import ReviewsSection from "@/components/custom/ReviewsSection";
+// import AIChatSection from "@/components/custom/AIChatSection";
+
 
 export default function LandingPage() {
   return (
@@ -33,7 +37,7 @@ export default function LandingPage() {
         <div className="mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12 w-full max-w-6xl">
           <div className="text-center md:text-left flex-1">
             <h1 className="flex items-center gap-x-2 text-3xl md:text-4xl font-semibold mb-4">
-            <Info className="opacity-50" color="blue" size={30}/>
+              <Info className="opacity-50" color="blue" size={30} />
               About Us
             </h1>
             <p className="text-sm md:text-base opacity-80 mb-6">
@@ -50,8 +54,18 @@ export default function LandingPage() {
       <section className="flex items-center justify-center  bg-black/90 text-white px-6 py-16">
         <div className="mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12 w-full max-w-6xl">
           <div className="md:w-1/2">
-            <h1 className="text-3xl md:text-3xl font-semibold mb-4 flex items-center gap-x-2"><BetweenHorizontalStart className="opacity-60" size={30} color="red"/> Our Services</h1>
-            <p className="text-sm md:text-justify opacity-60 mb-2 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique fugiat illo sapiente vitae reiciendis sequi repudiandae.</p>
+            <h1 className="text-3xl md:text-3xl font-semibold mb-4 flex items-center gap-x-2">
+              <BetweenHorizontalStart
+                className="opacity-60"
+                size={30}
+                color="red"
+              />{" "}
+              Our Services
+            </h1>
+            <p className="text-sm md:text-justify opacity-60 mb-2 ">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Similique fugiat illo sapiente vitae reiciendis sequi repudiandae.
+            </p>
             <Button variant="outline">Explore More</Button>
           </div>
           <div>
@@ -59,6 +73,17 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+
+      {/* <section>
+      <AIChatSection />
+      </section> */}
+
+      <section>
+        <ReviewsSection />
+      </section>
+
+      <Footer />
     </>
   );
 }
