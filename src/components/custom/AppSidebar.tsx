@@ -68,8 +68,8 @@ const data = {
           url: "/users/statistic",
         },
         {
-          title: "Settings",
-          url: "#",
+          title: "Nutrition",
+          url: "/users/nutrition",
         },
       ],
     },
@@ -116,8 +116,8 @@ const data = {
       ],
     },
     {
-      title: "Settings",
-      url: "#",
+      title: "Nutrition",
+      url: "/users/nutrition",
       icon: Settings2,
       items: [
         {

@@ -54,7 +54,7 @@ function UsersLayoutContent({ children }: { children: React.ReactNode }) {
       <AppSidebar user={user} loading={loading} logout={logout} />
       <main className="flex flex-col w-full h-screen overflow-hidden p-4 gap-y-4">
         {renderBreadcrumbs()}
-        <section className="h-screen w-full">{children}</section>
+        <section className="h-screen w-full overflow-auto">{children}</section>
       </main>
     </SidebarProvider>
   );
